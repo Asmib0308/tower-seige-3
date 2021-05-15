@@ -26,13 +26,13 @@ class Box{
             var pos =this.body.position;
             World.remove(world, this.body);             
             push();             
-            this.Visiblity = this.Visiblity - 1;                         
+            this.Visiblity = this.Visiblity - 5;                         
             pop();          
         }     
     } 
         
     score(){
-        if(this.Visiblity <0 && this.Visiblity >-100){
+        if(this.Visiblity <0 && this.Visiblity >-500){
             score++;
         }
     }
